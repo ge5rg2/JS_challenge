@@ -36,7 +36,7 @@ function init(){
     title.addEventListener("mouseenter", MouseEnter);
     title.addEventListener("mouseleave", MouseLeave);
     title.addEventListener("click", Click);
-    title.addEventListener("contextmenu", context);
+    window.addEventListener("contextmenu", context);
 }
 
 init();
