@@ -26,11 +26,17 @@ function Click(){
     }
 }
 
+function context(){
+    title.innerText = `right btn`;
+    title.style.color = "brown";
+}
+
 function init(){
     window.addEventListener("resize", Resize);
     title.addEventListener("mouseenter", MouseEnter);
     title.addEventListener("mouseleave", MouseLeave);
     title.addEventListener("click", Click);
+    title.addEventListener("contextmenu", context);
 }
 
 init();
