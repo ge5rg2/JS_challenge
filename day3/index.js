@@ -5,6 +5,16 @@ function Resize(){
     title.style.color = "blue";
 }
 
+function MouseEnter(){
+    title.innerText = `Mouse Enter`;
+    title.style.color = "green";
+}
+
+function MouseLeave(){
+    title.innerText = `Mouse leave`;
+    title.style.color = "tomato";
+}
+
 function Click(){
     if(title.style.color === "tomato"){
         title.innerText = `Hello!`
@@ -18,6 +28,9 @@ function Click(){
 
 function init(){
     window.addEventListener("resize", Resize);
+    title.addEventListener("mouseenter", MouseEnter);
+    title.addEventListener("mouseleave", MouseLeave);
     title.addEventListener("click", Click);
 }
+
 init();
